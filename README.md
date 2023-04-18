@@ -18,7 +18,7 @@ are made to [AcoustID] or other APIs.
 You may be able to download a precompiled `soundalike` executable for your
 operating system and architecture from the [Releases page].
 
-[Releases page]: https://github.com/derat/soundalike/releases
+[Releases page]: https://codeberg.org/derat/soundalike/releases
 
 Otherwise, to compile and install the `soundalike` executable, run `go install`
 from the root of this repository. You will need to have [Go] installed.

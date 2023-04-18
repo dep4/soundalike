@@ -3,13 +3,13 @@ steps:
     name: debian:stable-slim
     entrypoint: bash
     args:
-      - "-e"
-      - "-x"
-      - "-c"
+      - '-e'
+      - '-x'
+      - '-c'
       - |
         apt-get update
         apt-get install -y tar unzip wget
-        wget "https://github.com/derat/soundalike-testdata/archive/refs/tags/v${_TESTDATA}.zip"
+        wget "https://codeberg.org/derat/soundalike-testdata/archive/v${_TESTDATA}.zip"
         unzip "v${_TESTDATA}.zip"
         rm "v${_TESTDATA}.zip"
         mv "soundalike-testdata-${_TESTDATA}" testdata
@@ -21,14 +21,14 @@ steps:
     name: golang
     entrypoint: bash
     args:
-      - "-e"
-      - "-x"
-      - "-c"
+      - '-e'
+      - '-x'
+      - '-c'
       - |
         go install
         mv fpcalc /usr/bin/fpcalc
         go test -v ./...
 
 substitutions:
-  _FPCALC: "1.5.1"
-  _TESTDATA: "0.0.1"
+  _FPCALC: '1.5.1'
+  _TESTDATA: '0.0.1'

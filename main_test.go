@@ -18,7 +18,7 @@ func checkTestEnv() error {
 		return errors.New("soundalike executable not in path")
 	}
 	if _, err := os.Stat("testdata"); os.IsNotExist(err) {
-		return errors.New("testdata/ should be https://github.com/derat/soundalike-testdata checkout")
+		return errors.New("testdata/ should be https://codeberg.org/derat/soundalike-testdata checkout")
 	} else if err != nil {
 		return err
 	}

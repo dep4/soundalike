@@ -1,4 +1,4 @@
-module github.com/derat/soundalike
+module codeberg.org/derat/soundalike
 
 go 1.15
 
