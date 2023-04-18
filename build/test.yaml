@@ -12,7 +12,7 @@ steps:
         wget "https://codeberg.org/derat/soundalike-testdata/archive/v${_TESTDATA}.zip"
         unzip "v${_TESTDATA}.zip"
         rm "v${_TESTDATA}.zip"
-        mv "soundalike-testdata-${_TESTDATA}" testdata
+        mv soundalike-testdata testdata
         wget "https://github.com/acoustid/chromaprint/releases/download/v${_FPCALC}/chromaprint-fpcalc-${_FPCALC}-linux-x86_64.tar.gz"
         tar xf "chromaprint-fpcalc-${_FPCALC}-linux-x86_64.tar.gz"
         mv "chromaprint-fpcalc-${_FPCALC}-linux-x86_64/fpcalc" .
